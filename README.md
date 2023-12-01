@@ -17,7 +17,9 @@ Amplify will request selections from you
   simply choose the default selections every time and yes when it asks if you want backend access.
   
 Choose to log in through an AWS account (root user), 
-  enter the user information "forrestindustry@gmail.com" / "Cmpt370!".
+  enter the user information 
+  Email: forrestindustry@gmail.com
+  Password: Cmpt370!
   
 # Running the library management system:
 Simply type "npm run dev". 
