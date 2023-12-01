@@ -1,0 +1,81 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-amplify4699678ee9bc4-staging-184523-authRole",
+      "UnauthRoleArn": "arn:aws:iam::243962488732:role/amplify-amplify4699678ee9bc4-staging-184523-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::243962488732:role/amplify-amplify4699678ee9bc4-staging-184523-authRole",
+      "Region": "us-west-2",
+      "DeploymentBucketName": "amplify-amplify4699678ee9bc4-staging-184523-deployment",
+      "UnauthRoleName": "amplify-amplify4699678ee9bc4-staging-184523-unauthRole",
+      "StackName": "amplify-amplify4699678ee9bc4-staging-184523",
+      "StackId": "arn:aws:cloudformation:us-west-2:243962488732:stack/amplify-amplify4699678ee9bc4-staging-184523/5396b150-683a-11ed-9152-0a1d339e4ec1",
+      "AmplifyAppId": "d3uf1mcqkova8"
+    }
+  },
+  "api": {
+    "scrumlordstailwind": {
+      "service": "AppSync",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "output": {
+        "authConfig": {
+          "defaultAuthentication": {
+            "authenticationType": "API_KEY",
+            "apiKeyConfig": {
+              "apiKeyExpirationDays": 30,
+              "description": "api key description"
+            }
+          },
+          "additionalAuthenticationProviders": [
+            {
+              "authenticationType": "AWS_IAM"
+            }
+          ]
+        },
+        "GraphQLAPIIdOutput": "7laz2qpo6zcavgpq2c3jvyxfra",
+        "GraphQLAPIEndpointOutput": "https://hnbqtfgjgray5nhrzm5lbrp3ra.appsync-api.us-west-2.amazonaws.com/graphql",
+        "GraphQLAPIKeyOutput": "da2-jqjsj7ti75alhewxelxl4sogne"
+      },
+      "lastPushTimeStamp": "2022-11-21T03:16:56.304Z",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-amplify4699678ee9bc4-staging-184523-deployment/amplify-cfn-templates/api/cloudformation-template.json",
+        "logicalId": "apiscrumlordstailwind"
+      },
+      "lastPushDirHash": "z990qdF4tU0477mxW8276hZrDus="
+    }
+  },
+  "auth": {
+    "scrumlordstailwind": {
+      "service": "Cognito",
+      "serviceType": "imported",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false,
+      "output": {
+        "UserPoolId": "us-west-2_WoBNLqC8S",
+        "UserPoolName": "scrumlords-pool",
+        "AppClientID": "5ijhjptvcg52t5cdnr6q795ivh",
+        "AppClientIDWeb": "5ijhjptvcg52t5cdnr6q795ivh"
+      },
+      "frontendAuthConfig": {
+        "socialProviders": [],
+        "usernameAttributes": [
+          "EMAIL"
+        ],
+        "signupAttributes": [
+          "NAME",
+          "EMAIL",
+          "BIRTHDATE"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyMinLength": 6,
+          "passwordPolicyCharacters": []
+        },
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [],
+        "verificationMechanisms": []
+      },
+      "lastPushTimeStamp": "2022-11-19T22:30:13.293Z"
+    }
+  }
+}

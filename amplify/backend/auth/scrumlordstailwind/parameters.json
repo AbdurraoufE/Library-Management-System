@@ -1,0 +1,18 @@
+{
+  "authSelections": "userPoolOnly",
+  "resourceName": "scrumlordstailwind",
+  "serviceType": "imported",
+  "region": "us-west-2",
+  "usernameAttributes": [
+    "email"
+  ],
+  "requiredAttributes": [
+    "name",
+    "email",
+    "birthdate"
+  ],
+  "passwordPolicyMinLength": 6,
+  "passwordPolicyCharacters": [],
+  "mfaConfiguration": "OFF",
+  "mfaTypes": []
+}

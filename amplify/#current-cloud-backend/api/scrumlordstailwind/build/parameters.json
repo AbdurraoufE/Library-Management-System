@@ -1,0 +1,13 @@
+{
+    "AppSyncApiName": "scrumlordstailwind",
+    "DynamoDBBillingMode": "PAY_PER_REQUEST",
+    "DynamoDBEnableServerSideEncryption": false,
+    "authRoleName": {
+        "Ref": "AuthRoleName"
+    },
+    "unauthRoleName": {
+        "Ref": "UnauthRoleName"
+    },
+    "S3DeploymentBucket": "amplify-amplify4699678ee9bc4-staging-184523-deployment",
+    "S3DeploymentRootKey": "amplify-appsync-files/d3f5cad46c96e7cdfc093a719ed4425d76724528"
+}

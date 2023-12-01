@@ -1,0 +1,22 @@
+type Book @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  currentUsers: [String]
+  title: String!
+  author: String!
+  description: String!
+  numberAvailable: Int!
+  over18: Boolean!
+  reviews: [String!]
+}
+
+type User @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  name: String!
+  email: String!
+  birthdate: AWSDate!
+  username: String!
+  currentBooks: [String]
+  fines: [String]
+  admin: Boolean!
+}
+ 

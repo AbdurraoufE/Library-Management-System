@@ -1,0 +1,25 @@
+{
+  "staging": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-amplify4699678ee9bc4-staging-184523-authRole",
+      "UnauthRoleArn": "arn:aws:iam::243962488732:role/amplify-amplify4699678ee9bc4-staging-184523-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::243962488732:role/amplify-amplify4699678ee9bc4-staging-184523-authRole",
+      "Region": "us-west-2",
+      "DeploymentBucketName": "amplify-amplify4699678ee9bc4-staging-184523-deployment",
+      "UnauthRoleName": "amplify-amplify4699678ee9bc4-staging-184523-unauthRole",
+      "StackName": "amplify-amplify4699678ee9bc4-staging-184523",
+      "StackId": "arn:aws:cloudformation:us-west-2:243962488732:stack/amplify-amplify4699678ee9bc4-staging-184523/5396b150-683a-11ed-9152-0a1d339e4ec1",
+      "AmplifyAppId": "d3uf1mcqkova8"
+    },
+    "categories": {
+      "auth": {
+        "scrumlordstailwind": {
+          "userPoolId": "us-west-2_WoBNLqC8S",
+          "userPoolName": "scrumlords-pool",
+          "webClientId": "5ijhjptvcg52t5cdnr6q795ivh",
+          "nativeClientId": "5ijhjptvcg52t5cdnr6q795ivh"
+        }
+      }
+    }
+  }
+}

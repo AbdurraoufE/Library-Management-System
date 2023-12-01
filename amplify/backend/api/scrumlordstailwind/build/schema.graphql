@@ -1,0 +1,360 @@
+
+type Book @aws_iam @aws_api_key {
+  id: ID!
+  currentUsers: [String]
+  title: String!
+  author: String!
+  description: String!
+  numberAvailable: Int!
+  over18: Boolean!
+  reviews: [String!]
+  createdAt: AWSDateTime!
+  updatedAt: AWSDateTime!
+  _version: Int!
+  _deleted: Boolean
+  _lastChangedAt: AWSTimestamp!
+}
+
+type User @aws_iam @aws_api_key {
+  id: ID!
+  name: String!
+  email: String!
+  birthdate: AWSDate!
+  username: String!
+  currentBooks: [String]
+  fines: [String]
+  admin: Boolean!
+  createdAt: AWSDateTime!
+  updatedAt: AWSDateTime!
+  _version: Int!
+  _deleted: Boolean
+  _lastChangedAt: AWSTimestamp!
+}
+
+input ModelStringInput {
+  ne: String
+  eq: String
+  le: String
+  lt: String
+  ge: String
+  gt: String
+  contains: String
+  notContains: String
+  between: [String]
+  beginsWith: String
+  attributeExists: Boolean
+  attributeType: ModelAttributeTypes
+  size: ModelSizeInput
+}
+
+input ModelIntInput {
+  ne: Int
+  eq: Int
+  le: Int
+  lt: Int
+  ge: Int
+  gt: Int
+  between: [Int]
+  attributeExists: Boolean
+  attributeType: ModelAttributeTypes
+}
+
+input ModelFloatInput {
+  ne: Float
+  eq: Float
+  le: Float
+  lt: Float
+  ge: Float
+  gt: Float
+  between: [Float]
+  attributeExists: Boolean
+  attributeType: ModelAttributeTypes
+}
+
+input ModelBooleanInput {
+  ne: Boolean
+  eq: Boolean
+  attributeExists: Boolean
+  attributeType: ModelAttributeTypes
+}
+
+input ModelIDInput {
+  ne: ID
+  eq: ID
+  le: ID
+  lt: ID
+  ge: ID
+  gt: ID
+  contains: ID
+  notContains: ID
+  between: [ID]
+  beginsWith: ID
+  attributeExists: Boolean
+  attributeType: ModelAttributeTypes
+  size: ModelSizeInput
+}
+
+input ModelSubscriptionStringInput {
+  ne: String
+  eq: String
+  le: String
+  lt: String
+  ge: String
+  gt: String
+  contains: String
+  notContains: String
+  between: [String]
+  beginsWith: String
+  in: [String]
+  notIn: [String]
+}
+
+input ModelSubscriptionIntInput {
+  ne: Int
+  eq: Int
+  le: Int
+  lt: Int
+  ge: Int
+  gt: Int
+  between: [Int]
+  in: [Int]
+  notIn: [Int]
+}
+
+input ModelSubscriptionFloatInput {
+  ne: Float
+  eq: Float
+  le: Float
+  lt: Float
+  ge: Float
+  gt: Float
+  between: [Float]
+  in: [Float]
+  notIn: [Float]
+}
+
+input ModelSubscriptionBooleanInput {
+  ne: Boolean
+  eq: Boolean
+}
+
+input ModelSubscriptionIDInput {
+  ne: ID
+  eq: ID
+  le: ID
+  lt: ID
+  ge: ID
+  gt: ID
+  contains: ID
+  notContains: ID
+  between: [ID]
+  beginsWith: ID
+  in: [ID]
+  notIn: [ID]
+}
+
+enum ModelAttributeTypes {
+  binary
+  binarySet
+  bool
+  list
+  map
+  number
+  numberSet
+  string
+  stringSet
+  _null
+}
+
+input ModelSizeInput {
+  ne: Int
+  eq: Int
+  le: Int
+  lt: Int
+  ge: Int
+  gt: Int
+  between: [Int]
+}
+
+enum ModelSortDirection {
+  ASC
+  DESC
+}
+
+type ModelBookConnection @aws_api_key @aws_iam {
+  items: [Book]!
+  nextToken: String
+  startedAt: AWSTimestamp
+}
+
+input ModelBookFilterInput {
+  id: ModelIDInput
+  currentUsers: ModelStringInput
+  title: ModelStringInput
+  author: ModelStringInput
+  description: ModelStringInput
+  numberAvailable: ModelIntInput
+  over18: ModelBooleanInput
+  reviews: ModelStringInput
+  and: [ModelBookFilterInput]
+  or: [ModelBookFilterInput]
+  not: ModelBookFilterInput
+}
+
+type Query {
+  getBook(id: ID!): Book @aws_api_key @aws_iam
+  listBooks(filter: ModelBookFilterInput, limit: Int, nextToken: String): ModelBookConnection @aws_api_key @aws_iam
+  syncBooks(filter: ModelBookFilterInput, limit: Int, nextToken: String, lastSync: AWSTimestamp): ModelBookConnection @aws_api_key @aws_iam
+  getUser(id: ID!): User @aws_api_key @aws_iam
+  listUsers(filter: ModelUserFilterInput, limit: Int, nextToken: String): ModelUserConnection @aws_api_key @aws_iam
+  syncUsers(filter: ModelUserFilterInput, limit: Int, nextToken: String, lastSync: AWSTimestamp): ModelUserConnection @aws_api_key @aws_iam
+}
+
+input ModelBookConditionInput {
+  currentUsers: ModelStringInput
+  title: ModelStringInput
+  author: ModelStringInput
+  description: ModelStringInput
+  numberAvailable: ModelIntInput
+  over18: ModelBooleanInput
+  reviews: ModelStringInput
+  and: [ModelBookConditionInput]
+  or: [ModelBookConditionInput]
+  not: ModelBookConditionInput
+}
+
+input CreateBookInput {
+  id: ID
+  currentUsers: [String]
+  title: String!
+  author: String!
+  description: String!
+  numberAvailable: Int!
+  over18: Boolean!
+  reviews: [String!]
+  _version: Int
+}
+
+input UpdateBookInput {
+  id: ID!
+  currentUsers: [String]
+  title: String
+  author: String
+  description: String
+  numberAvailable: Int
+  over18: Boolean
+  reviews: [String!]
+  _version: Int
+}
+
+input DeleteBookInput {
+  id: ID!
+  _version: Int
+}
+
+type Mutation {
+  createBook(input: CreateBookInput!, condition: ModelBookConditionInput): Book @aws_api_key @aws_iam
+  updateBook(input: UpdateBookInput!, condition: ModelBookConditionInput): Book @aws_api_key @aws_iam
+  deleteBook(input: DeleteBookInput!, condition: ModelBookConditionInput): Book @aws_api_key @aws_iam
+  createUser(input: CreateUserInput!, condition: ModelUserConditionInput): User @aws_api_key @aws_iam
+  updateUser(input: UpdateUserInput!, condition: ModelUserConditionInput): User @aws_api_key @aws_iam
+  deleteUser(input: DeleteUserInput!, condition: ModelUserConditionInput): User @aws_api_key @aws_iam
+}
+
+input ModelSubscriptionBookFilterInput {
+  id: ModelSubscriptionIDInput
+  currentUsers: ModelSubscriptionStringInput
+  title: ModelSubscriptionStringInput
+  author: ModelSubscriptionStringInput
+  description: ModelSubscriptionStringInput
+  numberAvailable: ModelSubscriptionIntInput
+  over18: ModelSubscriptionBooleanInput
+  reviews: ModelSubscriptionStringInput
+  and: [ModelSubscriptionBookFilterInput]
+  or: [ModelSubscriptionBookFilterInput]
+}
+
+type Subscription {
+  onCreateBook(filter: ModelSubscriptionBookFilterInput): Book @aws_subscribe(mutations: ["createBook"]) @aws_api_key @aws_iam
+  onUpdateBook(filter: ModelSubscriptionBookFilterInput): Book @aws_subscribe(mutations: ["updateBook"]) @aws_api_key @aws_iam
+  onDeleteBook(filter: ModelSubscriptionBookFilterInput): Book @aws_subscribe(mutations: ["deleteBook"]) @aws_api_key @aws_iam
+  onCreateUser(filter: ModelSubscriptionUserFilterInput): User @aws_subscribe(mutations: ["createUser"]) @aws_api_key @aws_iam
+  onUpdateUser(filter: ModelSubscriptionUserFilterInput): User @aws_subscribe(mutations: ["updateUser"]) @aws_api_key @aws_iam
+  onDeleteUser(filter: ModelSubscriptionUserFilterInput): User @aws_subscribe(mutations: ["deleteUser"]) @aws_api_key @aws_iam
+}
+
+type ModelUserConnection @aws_api_key @aws_iam {
+  items: [User]!
+  nextToken: String
+  startedAt: AWSTimestamp
+}
+
+input ModelUserFilterInput {
+  id: ModelIDInput
+  name: ModelStringInput
+  email: ModelStringInput
+  birthdate: ModelStringInput
+  username: ModelStringInput
+  currentBooks: ModelStringInput
+  fines: ModelStringInput
+  admin: ModelBooleanInput
+  and: [ModelUserFilterInput]
+  or: [ModelUserFilterInput]
+  not: ModelUserFilterInput
+}
+
+input ModelUserConditionInput {
+  name: ModelStringInput
+  email: ModelStringInput
+  birthdate: ModelStringInput
+  username: ModelStringInput
+  currentBooks: ModelStringInput
+  fines: ModelStringInput
+  admin: ModelBooleanInput
+  and: [ModelUserConditionInput]
+  or: [ModelUserConditionInput]
+  not: ModelUserConditionInput
+}
+
+input CreateUserInput {
+  id: ID
+  name: String!
+  email: String!
+  birthdate: AWSDate!
+  username: String!
+  currentBooks: [String]
+  fines: [String]
+  admin: Boolean!
+  _version: Int
+}
+
+input UpdateUserInput {
+  id: ID!
+  name: String
+  email: String
+  birthdate: AWSDate
+  username: String
+  currentBooks: [String]
+  fines: [String]
+  admin: Boolean
+  _version: Int
+}
+
+input DeleteUserInput {
+  id: ID!
+  _version: Int
+}
+
+input ModelSubscriptionUserFilterInput {
+  id: ModelSubscriptionIDInput
+  name: ModelSubscriptionStringInput
+  email: ModelSubscriptionStringInput
+  birthdate: ModelSubscriptionStringInput
+  username: ModelSubscriptionStringInput
+  currentBooks: ModelSubscriptionStringInput
+  fines: ModelSubscriptionStringInput
+  admin: ModelSubscriptionBooleanInput
+  and: [ModelSubscriptionUserFilterInput]
+  or: [ModelSubscriptionUserFilterInput]
+}
+
