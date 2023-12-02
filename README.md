@@ -10,7 +10,7 @@
 Built with: JavaScript, ReactJS, NextJS, TailwindCSS, Amazon Amplify
 
 
-## Getting-Started / Installation
+## Getting-Started
 
 # Prerequisites:
 Install Node.js through the nodejs.org website, making sure to install version 14 or above.
