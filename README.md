@@ -1,11 +1,29 @@
-# Installation Instructions for Windows
-## Prerequisites:
+## Table of Contents
+- [What is the app built with](#Application-Background)
+- [Getting started](#Getting-Started)
+- [How to run the application](#How-To-Run-App)
+- [Features on the app](#Features)
+- [Screenshots](#screenshots)
+- [What is next?](#Future-Plans)
+
+## Application-Background
+Built with: JavaScript, ReactJS, NextJS, TailwindCSS, Amazon Amplify
+
+
+## Getting-Started / Installation
+
+# Prerequisites:
 Install Node.js through the nodejs.org website, making sure to install version 14 or above.
 
-Open a Windows Powershell window and type "npm install -g npm".
+Open a Windows Powershell window and type ```"npm install -g npm".```
 
-Finally, type "npm install -g @aws-amplify/cli" to install the Amplify Command Line Interface.
+Finally, type 
+```shell
+"npm install -g @aws-amplify/cli"
+``` 
+to install the Amplify Command Line Interface.
 
+## How-To-Run-App
 # Initial setup:
 
 In a Powershell window, type "npm i --force".
