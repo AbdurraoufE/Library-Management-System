@@ -3,7 +3,7 @@
 - [Getting started](#Getting-Started)
 - [How to run the application](#How-To-Run-App)
 - [Features on the app](#Features)
-- [Screenshots](#screenshots)
+- [Screenshots](#Screenshots)
 - [What is next?](#Future-Plans)
 
 ## Application-Background
@@ -56,4 +56,53 @@ Simply type:
 ```shell
 npm run dev
 ```
-- Using any web browser, navigate to ```localhost:3000``` to access the web application 
+- Using any web browser, navigate to ```localhost:3000``` to access the web application
+
+## Features
+
+📝 Signup / Create an account
+
+📚 Add books to the library system
+   - Connected to AWS database
+
+❌ Remove books from the library system
+   - Connected to AWS database
+📅 View book reservations made
+
+📌 Reserve/Un-Reserve books
+
+👨 Filter books by age group
+   - 18+ users can view books taged with "18+"
+
+🔍 Search for books
+
+⏰ Late penalty fee
+
+👑 Admin Account - Admin features/Full access 
+
+## Screenshots 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
