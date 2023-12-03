@@ -13,22 +13,21 @@ Built with: JavaScript, ReactJS, NextJS, TailwindCSS, Amazon Amplify
 # Getting-Started
 
 ## Prerequisites:
-Install Node.js through the nodejs.org website, making sure to install version 14 or above.
+Install Node.js through the official [Node.js website](https://nodejs.org/), making sure to <b>install version 14</b> or above.
 
 Open a Windows Powershell window and type:
 ```shell 
 npm install -g npm
 ```
 
-Finally, type: 
+Finally, type to install the Amplify Command Line Interface:
 ```shell
 npm install -g @aws-amplify/cli
 ``` 
-to install the Amplify Command Line Interface.
 
-## How-To-Run-App
+# How-To-Run-App
 
-# Initial setup:
+## Initial setup:
 
 In a Powershell window, type:
 ```shell
@@ -51,14 +50,14 @@ Choose to log in through an AWS account (root user),
   Password: Cmpt370!
   ```
 
-# Running the library management system:
+## Running the library management system:
 Simply type:
 ```shell
 npm run dev
 ```
 - Using any web browser, navigate to ```localhost:3000``` to access the web application
 
-## Features
+# Features
 
 📝 Signup / Create an account
 
@@ -80,7 +79,7 @@ npm run dev
 
 👑 Admin Account - Admin features/Full access 
 
-## Screenshots 
+# Screenshots 
 
 ## Add a book
 <img src="https://github.com/AbdurraoufE/Library-Management-System/assets/80374873/f9111fa4-33de-41d0-bde0-672d856ab9fb">
