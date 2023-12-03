@@ -119,23 +119,25 @@ npm run dev
 ## View books for users who are older than 18 years old
 <img src="https://github.com/AbdurraoufE/Library-Management-System/assets/80374873/617fb0e0-7cb3-407d-a8d3-ce61ad42584f">
 
+# Future-Plans
 
+## Rework UI
+- Enhance the user interface to provide a more intuitive and visually appealing experience. Employ improved color schemes to create a user-friendly environment
+  
+## Notifications
+- Implement a notification system to alert users about upcoming due dates, overdue books, and available book pickups
+  
+## Statistics and Reports
+- Develop visualizations that showcase the popularity and readership of specific books, offering insightful statistics for better decision-making
 
+## Feedback System
+- Enable users to rate books using a 5-star system, fostering community engagement and providing valuable feedback
 
+## Report System
+- Introduce a reporting mechanism, allowing users to notify administrators of any issues with books, such as damage or missing pages
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+## Hosting
+- Host the website to the web, with a custom domain so anybody can access it and start using it!
 
 
 
