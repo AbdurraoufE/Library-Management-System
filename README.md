@@ -81,29 +81,45 @@ npm run dev
 👑 Admin Account - Admin features/Full access 
 
 ## Screenshots 
-##Add a book
+
+## Add a book
 <img src="https://github.com/AbdurraoufE/Library-Management-System/assets/80374873/f9111fa4-33de-41d0-bde0-672d856ab9fb">
-<br>
-##View books
+
+---
+
+## View books
 <img src="https://github.com/AbdurraoufE/Library-Management-System/assets/80374873/9e246373-f570-4db7-948e-086acaacb3b4">
-<br>
-### Reserve/Un-Reserve books
+
+---
+
+## Reserve/Un-Reserve books
 <img src="https://github.com/AbdurraoufE/Library-Management-System/assets/80374873/33c3b117-ddfa-4ddf-a068-f8d5b5d8d3c0">
-<br>
-### Reserve/Un-Reserve books
+
+---
+
+## Reserve/Un-Reserve books
 <img src="https://github.com/AbdurraoufE/Library-Management-System/assets/80374873/fa5d7e53-33ce-4c68-8c57-34fd4b383de6">
-<br>
+
+---
+
 ## Add fines to user accounts
 <img src="https://github.com/AbdurraoufE/Library-Management-System/assets/80374873/d1b4412f-c0b6-4a82-b8b5-55d77a6b664b">
-<br>
-### Create an account
+
+---
+
+## Create an account
 <img src="https://github.com/AbdurraoufE/Library-Management-System/assets/80374873/06348d5a-33f9-468c-a122-15e5f202f2d1">
-<br>
-### View books for users who are younger than 18 years old
+
+---
+
+## View books for users who are younger than 18 years old
 <img src="https://github.com/AbdurraoufE/Library-Management-System/assets/80374873/21bd32cb-68e8-431b-a354-1ebb2c86eb1d">
-<br>
-### View books for users who are older than 18 years old
+
+---
+
+## View books for users who are older than 18 years old
 <img src="https://github.com/AbdurraoufE/Library-Management-System/assets/80374873/617fb0e0-7cb3-407d-a8d3-ce61ad42584f">
+
 
 
 
