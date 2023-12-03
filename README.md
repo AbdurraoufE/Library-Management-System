@@ -81,22 +81,22 @@ npm run dev
 👑 Admin Account - Admin features/Full access 
 
 ## Screenshots 
-1.
+
 <img src="https://github.com/AbdurraoufE/Library-Management-System/assets/80374873/f9111fa4-33de-41d0-bde0-672d856ab9fb">
-2.
-<img src="https://github.com/AbdurraoufE/Library-Management-System/assets/80374873/9e246373-f570-4db7-948e-086acaacb3b4" alt="Image2" width="500" height="250">
-3.
-<img src="https://github.com/AbdurraoufE/Library-Management-System/assets/80374873/33c3b117-ddfa-4ddf-a068-f8d5b5d8d3c0" alt="Image3" width="250" height="250">
-4.
-<img src="https://github.com/AbdurraoufE/Library-Management-System/assets/80374873/fa5d7e53-33ce-4c68-8c57-34fd4b383de6" alt="Image4" width="250" height="250">
-5.
-<img src="https://github.com/AbdurraoufE/Library-Management-System/assets/80374873/d1b4412f-c0b6-4a82-b8b5-55d77a6b664b" alt="Image5" width="250" height="250">
-6.
-<img src="https://github.com/AbdurraoufE/Library-Management-System/assets/80374873/06348d5a-33f9-468c-a122-15e5f202f2d1" alt="Image6" width="250" height="250">
-7.
-<img src="https://github.com/AbdurraoufE/Library-Management-System/assets/80374873/21bd32cb-68e8-431b-a354-1ebb2c86eb1d" alt="Image7" width="250" height="250">
-8.
-<img src="https://github.com/AbdurraoufE/Library-Management-System/assets/80374873/617fb0e0-7cb3-407d-a8d3-ce61ad42584f" alt="Image8" width="250" height="250">
+<br>
+<img src="https://github.com/AbdurraoufE/Library-Management-System/assets/80374873/9e246373-f570-4db7-948e-086acaacb3b4">
+<br>
+<img src="https://github.com/AbdurraoufE/Library-Management-System/assets/80374873/33c3b117-ddfa-4ddf-a068-f8d5b5d8d3c0">
+<br>
+<img src="https://github.com/AbdurraoufE/Library-Management-System/assets/80374873/fa5d7e53-33ce-4c68-8c57-34fd4b383de6">
+<br>
+<img src="https://github.com/AbdurraoufE/Library-Management-System/assets/80374873/d1b4412f-c0b6-4a82-b8b5-55d77a6b664b">
+<br>
+<img src="https://github.com/AbdurraoufE/Library-Management-System/assets/80374873/06348d5a-33f9-468c-a122-15e5f202f2d1">
+<br>
+<img src="https://github.com/AbdurraoufE/Library-Management-System/assets/80374873/21bd32cb-68e8-431b-a354-1ebb2c86eb1d">
+<br>
+<img src="https://github.com/AbdurraoufE/Library-Management-System/assets/80374873/617fb0e0-7cb3-407d-a8d3-ce61ad42584f">
 
 
 
