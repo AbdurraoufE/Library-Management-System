@@ -82,7 +82,7 @@ npm run dev
 
 ## Screenshots 
 1.
-<img src="https://github.com/AbdurraoufE/Library-Management-System/assets/80374873/f9111fa4-33de-41d0-bde0-672d856ab9fb" alt="Image1" width="200" height="400">
+<img src="https://github.com/AbdurraoufE/Library-Management-System/assets/80374873/f9111fa4-33de-41d0-bde0-672d856ab9fb">
 2.
 <img src="https://github.com/AbdurraoufE/Library-Management-System/assets/80374873/9e246373-f570-4db7-948e-086acaacb3b4" alt="Image2" width="500" height="250">
 3.
