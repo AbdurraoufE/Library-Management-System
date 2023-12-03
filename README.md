@@ -1,4 +1,4 @@
-## Table of Contents
+# Table of Contents
 - [What is the app built with](#Application-Background)
 - [Getting started](#Getting-Started)
 - [How to run the application](#How-To-Run-App)
@@ -6,13 +6,13 @@
 - [Screenshots](#Screenshots)
 - [What is next?](#Future-Plans)
 
-## Application-Background
+# Application-Background
 Built with: JavaScript, ReactJS, NextJS, TailwindCSS, Amazon Amplify
 
 
-## Getting-Started
+# Getting-Started
 
-# Prerequisites:
+## Prerequisites:
 Install Node.js through the nodejs.org website, making sure to install version 14 or above.
 
 Open a Windows Powershell window and type:
