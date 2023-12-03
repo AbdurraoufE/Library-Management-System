@@ -81,10 +81,10 @@ npm run dev
 👑 Admin Account - Admin features/Full access 
 
 ## Screenshots 
-### Add a book
+##Add a book
 <img src="https://github.com/AbdurraoufE/Library-Management-System/assets/80374873/f9111fa4-33de-41d0-bde0-672d856ab9fb">
 <br>
-### View books
+##View books
 <img src="https://github.com/AbdurraoufE/Library-Management-System/assets/80374873/9e246373-f570-4db7-948e-086acaacb3b4">
 <br>
 ### Reserve/Un-Reserve books
